@@ -1,0 +1,5 @@
+services:
+  app:
+    command: sh -c "corepack enable && corepack prepare pnpm@latest --activate && pnpm install --frozen-lockfile && pnpm build && pnpm start"
+    environment:
+      SITE_URL: ${SITE_URL}

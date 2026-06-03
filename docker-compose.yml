@@ -1,32 +1,11 @@
 services:
-  frontend:
+  app:
     image: node:20-alpine
     working_dir: /workspace
-    command: sh -c "corepack enable && corepack prepare pnpm@latest --activate && pnpm install && pnpm --filter frontend dev -- --hostname 0.0.0.0 --port 3000"
+    command: sh -c "corepack enable && corepack prepare pnpm@latest --activate && pnpm install && pnpm dev"
     ports:
       - "3000:3000"
     environment:
-      PAYLOAD_PUBLIC_SERVER_URL: http://cms:3001
       SITE_URL: http://localhost:3000
     volumes:
       - .:/workspace
-    depends_on:
-      - cms
-
-  cms:
-    image: node:20-alpine
-    working_dir: /workspace
-    command: sh -c "corepack enable && corepack prepare pnpm@latest --activate && pnpm install && pnpm --filter cms dev -- --hostname 0.0.0.0 --port 3001"
-    ports:
-      - "3001:3001"
-    environment:
-      DATABASE_URL: file:/workspace/cms/.payload/payload.db
-      PAYLOAD_SECRET: dev-secret-change-me
-      SERVER_URL: http://localhost:3001
-      FRONTEND_URL: http://localhost:3000
-    volumes:
-      - .:/workspace
-      - cms-data:/workspace/cms/.payload
-
-volumes:
-  cms-data:
