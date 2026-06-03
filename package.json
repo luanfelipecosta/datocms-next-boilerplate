@@ -1,0 +1,14 @@
+{
+  "name": "next-payload-boilerplate",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "cms"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel --filter frontend --filter cms dev",
+    "build": "pnpm --filter frontend build && pnpm --filter cms build",
+    "lint": "pnpm --filter frontend lint && pnpm --filter cms lint",
+    "storybook": "pnpm --filter frontend storybook"
+  }
+}

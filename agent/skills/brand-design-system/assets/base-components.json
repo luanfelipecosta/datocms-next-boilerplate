@@ -1,0 +1,244 @@
+{
+  "base_components": [
+    {
+      "name": "Announcement Bar",
+      "purpose": "Surface a concise operational message, availability note, or institutional highlight above the main navigation.",
+      "required_elements": [
+        "Single-line message",
+        "Optional supporting link",
+        "High-contrast background and text"
+      ],
+      "variants": [
+        "Informational",
+        "Urgency or campaign",
+        "Institutional reassurance"
+      ],
+      "tailwind_notes": [
+        "Use compact vertical padding such as py-2",
+        "Keep content inside a centered max-width container",
+        "Apply sober high-contrast colors derived from the brand palette"
+      ],
+      "content_guidance": [
+        "Keep copy short and factual",
+        "Avoid stacking multiple messages",
+        "Do not use the bar for dense promotional copy"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "Header and Navigation",
+      "purpose": "Provide identity, primary navigation, and top-level actions for the website.",
+      "required_elements": [
+        "Logo or logotype",
+        "Primary navigation links",
+        "Primary CTA",
+        "Mobile navigation behavior"
+      ],
+      "variants": [
+        "Transparent over hero",
+        "Solid background",
+        "Sticky compact state"
+      ],
+      "tailwind_notes": [
+        "Use flex alignment with generous horizontal spacing",
+        "Preserve clear focus states on all interactive elements",
+        "Prefer backdrop blur only when it supports readability"
+      ],
+      "content_guidance": [
+        "Navigation labels should be explicit and low-ambiguity",
+        "CTA label should express the next action clearly"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "Hero",
+      "purpose": "State the main promise, establish authority, and orient the visitor immediately.",
+      "required_elements": [
+        "Headline",
+        "Supporting paragraph",
+        "Primary CTA",
+        "Secondary CTA or proof point",
+        "Supporting visual or media"
+      ],
+      "variants": [
+        "Text-left with media-right",
+        "Editorial centered",
+        "Split hero with metric cards"
+      ],
+      "tailwind_notes": [
+        "Use a strong desktop grid and readable stacked mobile layout",
+        "Keep the CTA group within the first viewport",
+        "Use controlled vertical rhythm between headline, body, and actions"
+      ],
+      "content_guidance": [
+        "Lead with the core promise, not generic category copy",
+        "Avoid vague claims and decorative filler",
+        "Use proof or context directly under the promise when available"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "Section Intro",
+      "purpose": "Introduce a section with hierarchy, framing, and optional supporting copy.",
+      "required_elements": [
+        "Eyebrow or kicker",
+        "Section title",
+        "Optional supporting paragraph"
+      ],
+      "variants": [
+        "Centered",
+        "Left-aligned",
+        "Split heading with side note"
+      ],
+      "tailwind_notes": [
+        "Keep width constrained for readable line length",
+        "Use margin rhythm that creates clear separation from following grids"
+      ],
+      "content_guidance": [
+        "Use this component to frame content blocks consistently",
+        "Avoid repeating the page headline structure verbatim"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "Feature or Service Cards",
+      "purpose": "Present discrete service, feature, or offer items in a scannable grid.",
+      "required_elements": [
+        "Title",
+        "Short description",
+        "Optional icon or media",
+        "Optional supporting bullets or link"
+      ],
+      "variants": [
+        "Simple cards",
+        "Bordered cards",
+        "Media-led cards"
+      ],
+      "tailwind_notes": [
+        "Keep card heights visually balanced without forcing equal text length",
+        "Use border and shadow tokens from the design system, not ad hoc styles",
+        "Prefer responsive grid columns over carousel behavior for primary content"
+      ],
+      "content_guidance": [
+        "One concept per card",
+        "Keep descriptions concrete and free of repetition"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "Metrics or Proof Strip",
+      "purpose": "Show concise proof points, counts, credentials, or confidence signals.",
+      "required_elements": [
+        "Metric or proof label",
+        "Short explanation",
+        "Clear grouping"
+      ],
+      "variants": [
+        "Three-column strip",
+        "Card grid",
+        "Inline list"
+      ],
+      "tailwind_notes": [
+        "Use compact spacing and strong typographic contrast",
+        "Support stacking cleanly on mobile"
+      ],
+      "content_guidance": [
+        "Only include verified proof",
+        "Avoid fabricated social proof or unverified performance claims"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "Testimonial or Social Proof",
+      "purpose": "Present trust-building narrative evidence or reputation signals.",
+      "required_elements": [
+        "Quote or proof statement",
+        "Attribution or context",
+        "Optional supporting media"
+      ],
+      "variants": [
+        "Single featured quote",
+        "Grid of testimonials",
+        "Editorial proof block"
+      ],
+      "tailwind_notes": [
+        "Keep quotation width readable",
+        "Use contrast and spacing instead of decorative quote marks"
+      ],
+      "content_guidance": [
+        "Only use approved and attributable proof",
+        "Avoid implying outcomes beyond what the source supports"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "FAQ",
+      "purpose": "Answer recurring visitor questions in a consistent expandable format.",
+      "required_elements": [
+        "Question",
+        "Answer",
+        "Clear expand or collapse affordance"
+      ],
+      "variants": [
+        "Accordion",
+        "Two-column FAQ list"
+      ],
+      "tailwind_notes": [
+        "Preserve keyboard accessibility and visible focus",
+        "Keep answer spacing generous enough for multi-line reading"
+      ],
+      "content_guidance": [
+        "Use factual, non-hedged answers",
+        "Escalate regulated or approval-gated topics instead of improvising"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "CTA Band",
+      "purpose": "Convert visitor intent with a focused action block near the end of a page.",
+      "required_elements": [
+        "CTA headline",
+        "Supporting line",
+        "Primary action",
+        "Optional secondary action"
+      ],
+      "variants": [
+        "Centered band",
+        "Split layout",
+        "Inset card"
+      ],
+      "tailwind_notes": [
+        "Use high contrast and obvious button hierarchy",
+        "Keep padding large enough to feel intentional without overwhelming the page"
+      ],
+      "content_guidance": [
+        "Give one clear next step",
+        "Avoid overloading the CTA block with multiple competing goals"
+      ],
+      "brand_notes": []
+    },
+    {
+      "name": "Footer",
+      "purpose": "Close the page with utility links, brand information, and secondary actions.",
+      "required_elements": [
+        "Brand identifier",
+        "Navigation or utility links",
+        "Contact or next-step area",
+        "Legal or policy slot"
+      ],
+      "variants": [
+        "Simple footer",
+        "Multi-column footer"
+      ],
+      "tailwind_notes": [
+        "Keep visual density lower than the body content",
+        "Use clear grouping and generous row spacing on mobile"
+      ],
+      "content_guidance": [
+        "Do not bury critical actions",
+        "Keep compliance and policy references easy to scan"
+      ],
+      "brand_notes": []
+    }
+  ]
+}

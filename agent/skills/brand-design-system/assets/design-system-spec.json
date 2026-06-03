@@ -1,0 +1,39 @@
+{
+  "section_order": [
+    "page-header",
+    "brand-summary",
+    "brand-assets",
+    "core-foundations",
+    "visual-behavior",
+    "voice-content-rules",
+    "component-system",
+    "implementation-notes"
+  ],
+  "spacing_scale": [
+    { "token": "space-2", "value": "0.5rem", "usage": "tight inline spacing", "source": "system default" },
+    { "token": "space-4", "value": "1rem", "usage": "small component spacing", "source": "system default" },
+    { "token": "space-6", "value": "1.5rem", "usage": "card internals", "source": "system default" },
+    { "token": "space-8", "value": "2rem", "usage": "section blocks", "source": "system default" },
+    { "token": "space-12", "value": "3rem", "usage": "hero and large section spacing", "source": "system default" }
+  ],
+  "motion_tokens": [
+    { "name": "motion-quick", "value": "150ms", "ease": "ease-out", "usage": "hover, color, opacity", "source": "system default" },
+    { "name": "motion-base", "value": "240ms", "ease": "ease-in-out", "usage": "buttons, drawers, small reveals", "source": "system default" },
+    { "name": "motion-slow", "value": "420ms", "ease": "ease-in-out", "usage": "hero media or section transitions", "source": "system default" }
+  ],
+  "shadow_tokens": [
+    { "name": "shadow-soft", "value": "0 8px 30px rgba(13, 22, 28, 0.08)", "usage": "elevated cards", "source": "system default" },
+    { "name": "shadow-panel", "value": "0 18px 60px rgba(13, 22, 28, 0.12)", "usage": "feature panels and hero media", "source": "system default" },
+    { "name": "shadow-none", "value": "none", "usage": "strict flat or brutalist surfaces", "source": "system default" }
+  ],
+  "border_tokens": [
+    { "name": "border-subtle", "value": "1px solid rgba(13, 22, 28, 0.12)", "usage": "cards and separators", "source": "system default" },
+    { "name": "border-strong", "value": "1px solid rgba(13, 22, 28, 0.28)", "usage": "high-emphasis containers", "source": "system default" },
+    { "name": "border-accent", "value": "1px solid currentColor", "usage": "interactive emphasis", "source": "system default" }
+  ],
+  "radius_tokens": [
+    { "name": "radius-sm", "value": "0.5rem", "usage": "buttons and inputs", "source": "system default" },
+    { "name": "radius-md", "value": "1rem", "usage": "cards and content blocks", "source": "system default" },
+    { "name": "radius-lg", "value": "1.5rem", "usage": "hero panels and large media", "source": "system default" }
+  ]
+}

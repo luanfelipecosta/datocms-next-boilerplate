@@ -1,0 +1,28 @@
+{
+  "custom_components": [
+    {
+      "name": "Clinical Journey Timeline",
+      "purpose": "Map the visitor journey from first contact to follow-up care in a way that reduces uncertainty.",
+      "required_elements": [
+        "Step label",
+        "Step description",
+        "Expected outcome or reassurance note"
+      ],
+      "variants": [
+        "Vertical timeline",
+        "Horizontal desktop timeline"
+      ],
+      "tailwind_notes": [
+        "Use a responsive grid for desktop and a stacked sequence for mobile",
+        "Show progression through consistent connectors or dividers"
+      ],
+      "content_guidance": [
+        "Keep each step explicit and operational",
+        "Avoid clinical promises or unsupported logistics claims"
+      ],
+      "brand_notes": [
+        "Useful when the brand promise depends on clarity, safety, and guided support"
+      ]
+    }
+  ]
+}
