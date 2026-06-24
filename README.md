@@ -1,6 +1,6 @@
 # Next.js App
 
-This repository is now a single root-level Next.js App Router project.
+This repository uses a `src/`-based Next.js App Router layout.
 
 ## Stack
 
@@ -35,7 +35,7 @@ Storybook runs on port `6006`.
 
 ## Environment
 
-Copy values from [.env.example](/Users/luancosta/Documents/website-poc/.env.example) if you need overrides.
+Copy values from [.env.example](.env.example) if you need overrides.
 
 - `SITE_URL` is used for metadata and sitemap generation.
 - `DATOCMS_API_TOKEN` and `DATOCMS_ENVIRONMENT` are reserved for the future DatoCMS integration and are not used yet.

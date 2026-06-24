@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { siteConfig } from '@/lib/site';
 import { Button } from '@/components/ui/button';
+import { RouteTransition } from '@/components/layout/route-transition';
 
 export const SiteShell = ({ children }: { children: ReactNode }) => {
   return (
@@ -23,7 +24,9 @@ export const SiteShell = ({ children }: { children: ReactNode }) => {
           </Button>
         </div>
       </header>
-      <main>{children}</main>
+      <main>
+        <RouteTransition>{children}</RouteTransition>
+      </main>
       <footer className="border-t border-border/50">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
           <p>{siteConfig.name}</p>
